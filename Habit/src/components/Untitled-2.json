@@ -1,0 +1,8 @@
+{
+  "text": "Test Habit",
+  "description": "Test Description",
+  "category": "health",
+  "streak": 0,
+  "completed": false,
+  "userEmail": "test@example.com"
+}

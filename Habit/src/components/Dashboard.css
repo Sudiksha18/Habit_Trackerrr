@@ -1,0 +1,254 @@
+/* General Styles */
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 24px;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.dashboard-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color: #0f172a;
+}
+
+.add-habit-button {
+  background-color: #0f172a;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.add-habit-button:hover {
+  background-color: #1e293b;
+}
+
+.dashboard-subtitle {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 32px;
+}
+
+/* Metrics Section */
+.dashboard-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.metric-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.metric-header {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #e9edf2;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.metric-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0f172a;
+  margin: 4px 0;
+}
+
+.metric-progress-bar {
+  background-color: #f1f5f9;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.progress-bar-inner {
+  background-color: #0ea5e9;
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.metric-description {
+  color: #64748b;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+/* Pending Habits Section */
+.pending-habits-section,
+.completed-habits-section {
+  margin-bottom: 25px;
+}
+
+.pending-habits-section h4,
+.completed-habits-section h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #343a40;
+}
+
+.habit-list {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 15px;
+}
+
+.habit-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap; /* Allow habit item elements to wrap */
+}
+
+.habit-item:last-child {
+  border-bottom: none;
+}
+
+.habit-details {
+  flex-grow: 1;
+  margin-right: 15px; /* Add some spacing */
+  margin-bottom: 10px; /* Add some bottom margin for wrapping */
+}
+
+.habit-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #343a40;
+  margin-bottom: 5px;
+}
+
+.habit-subtext {
+  color: #6c757d;
+  font-size: 0.85rem;
+  margin-bottom: 3px;
+}
+
+.habit-streak {
+  color: #6c757d;
+  font-size: 0.8rem;
+}
+
+.habit-tag {
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  margin-left: 5px;
+}
+
+.habit-tag.health {
+  background-color: #e2f5e8;
+  color: #28a745;
+}
+
+.habit-tag.learning {
+  background-color: #fff4e1;
+  color: #fd7e14;
+}
+
+.habit-frequency {
+  background-color: #e0f2ff;
+  color: #1e88e5;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  margin-left: 5px;
+}
+
+.habit-checkbox {
+  margin-right: 15px;
+  margin-bottom: 10px; /* Add some bottom margin for wrapping */
+}
+
+.habit-options-icon {
+  font-size: 1.2rem;
+  color: #777;
+  cursor: pointer;
+  margin-bottom: 10px; /* Add some bottom margin for wrapping */
+}
+
+/* Completed Habits */
+.completed-habits-section .habit-item {
+  border-bottom: 1px solid #eee;
+}
+
+.completed-habits-section .habit-item.completed .habit-title {
+  color: #28a745;
+  display: flex;
+  align-items: center;
+}
+
+.completed-habits-section .habit-item.completed .completed-icon {
+  margin-right: 5px;
+  font-size: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column; /* Stack header elements on smaller screens */
+    align-items: flex-start;
+  }
+
+  .dashboard-header h2 {
+    margin-bottom: 10px;
+  }
+
+  .dashboard-metrics {
+    grid-template-columns: 1fr; /* Stack metrics cards on smaller screens */
+  }
+
+  .habit-item {
+    flex-direction: column; /* Stack habit item elements */
+    align-items: flex-start;
+  }
+
+  .habit-details {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .habit-checkbox {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .habit-options-icon {
+    margin-bottom: 10px;
+  }
+}
