@@ -190,22 +190,23 @@ function Statistics() {
               </Link>
             </li>
             <li className="nav-item mb-2">
-              <Link className="nav-link d-flex align-items-center gap-2 text-dark fw-semibold" to="/statistics">
+              <Link className="nav-link d-flex align-items-center gap-2 text-dark fw-semibold" to="/statistics"style={{ fontSize: '1.55rem' }}>
                 <BarChart2 size={18} />Statistics
               </Link>
             </li>
+            
             <li className="nav-item mb-2">
-              <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/calendar">
-                <Calendar size={18} />Calendar
-              </Link>
-            </li>
-            <li className="nav-item mb-2">
-              <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/team">
+              <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/team" style={{ fontSize: '1.55rem' }}>
                 <Users size={18} />Team
               </Link>
             </li>
             <li className="nav-item mb-2">
-              <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/settings">
+              <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/calendar" style={{ fontSize: '1.55rem' }}>
+                <Calendar size={18} />Calendar
+              </Link>
+            </li>
+            <li className="nav-item mb-2">
+              <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/settings" style={{ fontSize: '1.55rem' }}>
                 <Settings size={18} />Settings
               </Link>
             </li>

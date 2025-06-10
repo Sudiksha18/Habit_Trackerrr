@@ -11,6 +11,8 @@ import InvitationPage from './components/InvitationPage';
 import Calendar from './components/Calendar';
 
 function App() {
+        const userEmail = localStorage.getItem('userEmail');
+
   return (
     <Router>
       <Routes>
@@ -19,7 +21,7 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/calendar" element={<Calendar />} />
-        <Route path="/statistics" element={<Statistics />} />
+        <Route path="/statistics" element={<Statistics userEmail={userEmail} />} />
         <Route path="/team" element={<TeamManagementPage />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/invitation" element={<InvitationPage />} />

@@ -19,7 +19,7 @@ const DashboardLayout = ({ children }) => {
             <li className="nav-item mb-2">
               <Link 
                 className={`nav-link d-flex align-items-center gap-2 ${isActive('/dashboard') ? 'text-dark fw-medium' : 'text-secondary'}`} 
-                to="/dashboard"
+                to="/dashboard" style={{ fontSize: '1.55rem' }}
               >
                 <FiGrid size={18} />Dashboard
               </Link>
@@ -27,7 +27,7 @@ const DashboardLayout = ({ children }) => {
             <li className="nav-item mb-2">
               <Link 
                 className={`nav-link d-flex align-items-center gap-2 ${isActive('/statistics') ? 'text-dark fw-medium' : 'text-secondary'}`} 
-                to="/statistics"
+                to="/statistics" style={{ fontSize: '1.55rem' }}
               >
                 <FiBarChart2 size={18} />Statistics
               </Link>
@@ -35,7 +35,7 @@ const DashboardLayout = ({ children }) => {
             <li className="nav-item mb-2">
               <Link 
                 className={`nav-link d-flex align-items-center gap-2 ${isActive('/team') ? 'text-dark fw-medium' : 'text-secondary'}`} 
-                to="/team"
+                to="/team" style={{ fontSize: '1.55rem' }}
               >
                 <FiUsers size={18} />Team
               </Link>
@@ -43,7 +43,7 @@ const DashboardLayout = ({ children }) => {
             <li className="nav-item mb-2">
               <Link 
                 className={`nav-link d-flex align-items-center gap-2 ${isActive('/calendar') ? 'text-dark fw-medium' : 'text-secondary'}`} 
-                to="/calendar"
+                to="/calendar" style={{ fontSize: '1.55rem' }}
               >
                 <FiCalendar size={18} />Calendar
               </Link>
@@ -51,7 +51,7 @@ const DashboardLayout = ({ children }) => {
             <li className="nav-item mb-2">
               <Link 
                 className={`nav-link d-flex align-items-center gap-2 ${isActive('/settings') ? 'text-dark fw-medium' : 'text-secondary'}`} 
-                to="/settings"
+                to="/settings" style={{ fontSize: '1.55rem' }}
               >
                 <FiSettings size={18} />Settings
               </Link>

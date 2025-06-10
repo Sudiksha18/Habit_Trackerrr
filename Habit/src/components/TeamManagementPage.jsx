@@ -113,27 +113,28 @@ const TeamManagementPage = () => {
                 <nav className="flex-grow-1">
                     <ul className="nav flex-column">
                         <li className="nav-item mb-2">
-                            <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/dashboard">
+                            <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/dashboard" style={{ fontSize: '1.55rem' }}>
                                 <FiGrid size={18} />Dashboard
                             </Link>
                         </li>
                         <li className="nav-item mb-2">
-                            <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/statistics">
+                            <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/statistics" style={{ fontSize: '1.55rem' }}>
                                 <FiBarChart2 size={18} />Statistics
                             </Link>
                         </li>
                         <li className="nav-item mb-2">
-                            <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/calendar">
-                                <Calendar size={18} />Calendar
-                            </Link>
-                        </li>
-                        <li className="nav-item mb-2">
-                            <Link className="nav-link d-flex align-items-center gap-2 text-dark fw-medium" to="/team">
+                            <Link className="nav-link d-flex align-items-center gap-2 text-dark fw-medium" to="/team" style={{ fontSize: '1.55rem' }}>
                                 <FiUsers size={18} />Team
                             </Link>
                         </li>
                         <li className="nav-item mb-2">
-                            <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/settings">
+                            <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/calendar" style={{ fontSize: '1.55rem' }}>
+                                <Calendar size={18} />Calendar
+                            </Link>
+                        </li>
+                        
+                        <li className="nav-item mb-2">
+                            <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/settings" style={{ fontSize: '1.55rem' }}>
                                 <FiSettings size={18} />Settings
                             </Link>
                         </li>

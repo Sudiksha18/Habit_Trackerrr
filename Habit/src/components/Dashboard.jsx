@@ -282,27 +282,28 @@ const response = await fetch(`http://localhost:5001/api/habits/${id}/toggle`, {
         <nav className="flex-grow-1">
           <ul className="nav flex-column">
             <li className="nav-item mb-2">
-              <Link className="nav-link d-flex align-items-center gap-2 text-dark fw-small" to="/dashboard">
+              <Link className="nav-link d-flex align-items-center gap-2 text-dark fw-small" to="/dashboard" style={{ fontSize: '1.55rem' }}>
                 <Grid size={18} />Dashboard
               </Link>
             </li>
             <li className="nav-item mb-2">
-              <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/statistics">
+              <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/statistics" style={{ fontSize: '1.55rem' }}>
                 <BarChart2 size={18} />Statistics
               </Link>
             </li>
             <li className="nav-item mb-2">
-              <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/calendar">
-                <Calendar size={18} />Calendar
-              </Link>
-            </li>
-            <li className="nav-item mb-2">
-              <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/team">
+              <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/team" style={{ fontSize: '1.55rem' }}>
                 <Users size={18} />Team
               </Link>
             </li>
             <li className="nav-item mb-2">
-              <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/settings">
+              <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/calendar" style={{ fontSize: '1.55rem' }}>
+                <Calendar size={18} />Calendar
+              </Link>
+            </li>
+            
+            <li className="nav-item mb-2">
+              <Link className="nav-link d-flex align-items-center gap-2 text-secondary" to="/settings" style={{ fontSize: '1.55rem' }}>
                 <Settings size={18} />Settings
               </Link>
             </li>
